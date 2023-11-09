@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-igsd
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-igsd
+    app.kubernetes.io/part-of: cin4s-839-0001-app
+  name: devfile-sample-igsd6yey
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: devfile-sample-igsd
+    weight: null
+status: {}

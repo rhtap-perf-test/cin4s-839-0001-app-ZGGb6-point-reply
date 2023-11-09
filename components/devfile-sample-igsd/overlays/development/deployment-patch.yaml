@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-igsd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/cin4s-839-0001-tenant/cin4s-839-0001-app/devfile-sample-igsd@sha256:9727b9f0f868c0691af10754cf5442a196bbe59ee1ad0ed0b1f783ff101fe9c0
+        name: my-nodejs
+        resources: {}
+status: {}
